@@ -3,7 +3,6 @@
 //  Speak
 //
 //  Created by Skalnik, Michael P on 1/20/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
 #import "AppController.h"
@@ -12,7 +11,6 @@
 @implementation AppController
 
 -(id)init {
-	
 	if ((self = [super init]) != nil) {
 		speechSynth = [[NSSpeechSynthesizer alloc] init];
 	}
