@@ -17,6 +17,10 @@
 	if ((self = [super init]) != nil) {
 		personOne = [[Person alloc] init];
 		personTwo = [[Person alloc] init];
+		[personOne setFirstName:@"Mike"];
+		[personOne setLastName:@"Skalnik"];
+		[personOne setDateOfBirth:@"Jan 1"];
+		[[personOne pet] setName:@"Fredrick"];
 	}
 	return self;
 }
