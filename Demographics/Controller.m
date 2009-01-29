@@ -31,7 +31,9 @@
 }
 
 -(void)describeDemographics {
-	NSLog([personOne description]);
-	NSLog([personTwo description]);
+	NSArray *peopleArray = [[NSArray alloc] initWithObjects:personOne, personTwo, nil];
+	for(Person *person in peopleArray) {
+		NSLog([person description]);
+	}
 }
 @end
