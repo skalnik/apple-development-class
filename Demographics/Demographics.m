@@ -3,8 +3,10 @@
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	controller = [[Controller alloc] init];
-    NSLog([controller describeDemographics]);
+	
+    Controller *controller = [[Controller alloc] init];
+    [controller describeDemographics];
+	
     [pool drain];
     return 0;
 }

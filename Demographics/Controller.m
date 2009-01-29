@@ -6,7 +6,8 @@
 //
 
 #import "Controller.h"
-
+#import "Person.h"
+#import "Pet.h"
 
 @implementation Controller
 
@@ -21,11 +22,15 @@
 		[personOne setLastName:@"Skalnik"];
 		[personOne setDateOfBirth:@"Jan 1"];
 		[[personOne pet] setName:@"Fredrick"];
+		[personTwo setFirstName:@"John"];
+		[personTwo setLastName:@"Doe"];
+		[personTwo setDateOfBirth:@"Mar 15"];
+		[[personTwo pet] setName:@"Gottfried"];
 	}
 	return self;
 }
 
--(void)descibeDemographics {
+-(void)describeDemographics {
 	NSLog([personOne description]);
 	NSLog([personTwo description]);
 }
